@@ -1,5 +1,5 @@
 export const heroData = {
-  name: "Hamza Kürşat Akburak",
+  name: "Hamza Kürşat AKBURAK",
   tagline: "Electrical & Electronics Engineer focused on Radar, Intelligent Systems and Applied AI",
   intro: "Building intelligent systems that bridge the gap between abstract algorithms and real-world hardware. Passionate about robotics, signal processing, and leadership.",
   buttons: [
@@ -63,7 +63,7 @@ export const socialProjects = [
   }
 ];
 
-export const experienceData = [
+export const technicalExperience = [
   {
     id: 1,
     role: "Engineering Intern",
@@ -77,6 +77,61 @@ export const experienceData = [
     company: "University Lab",
     duration: "Sep 2023 - June 2024",
     description: "Conducted research on signal processing algorithms for low-power devices. Co-authored a conference paper."
+  }
+];
+
+export const leadershipExperience = [
+  {
+    id: 101,
+    role: "President",
+    company: "University Robotics Club",
+    duration: "Sep 2022 - June 2023",
+    description: "Led a team of 30+ students in designing and building autonomous robots for national competitions. Managed budget and sponsorship acquisition."
+  },
+  {
+    id: 102,
+    role: "Event Organizer",
+    company: "Tech Summit 2023",
+    duration: "Jan 2023 - May 2023",
+    description: "Organized a university-wide technology summit with over 500 attendees and 20 industry speakers."
+  }
+];
+
+export const programsData = [
+  {
+    id: 1,
+    program: "AI Summer Academy",
+    organization: "Deep Learning Institute",
+    description: "Selected for an intensive 2-week program focused on advanced neural network architectures.",
+    image: "https://via.placeholder.com/100x100?text=AI+Academy"
+  },
+  {
+    id: 2,
+    program: "Future Leaders Workshop",
+    organization: "Global Tech",
+    description: "Participated in leadership training and mentorship sessions with industry executives.",
+    image: "https://via.placeholder.com/100x100?text=Leaders+Workshop"
+  }
+];
+
+export const certificatesData = [
+  {
+    id: 1,
+    name: "Machine Learning Specialist",
+    description: "Issued by Coursera (Stanford University). Covers supervised and unsupervised learning.",
+    image: "https://via.placeholder.com/300x200?text=ML+Cert"
+  },
+  {
+    id: 2,
+    name: "Embedded Systems Professional",
+    description: "Issued by Arm Education. Focus on ARM Cortex-M architecture and programming.",
+    image: "https://via.placeholder.com/300x200?text=Embedded+Cert"
+  },
+  {
+    id: 3,
+    name: "Project Management Fundamentals",
+    description: "Issued by PMI. Introduction to agile methodologies and project lifecycle.",
+    image: "https://via.placeholder.com/300x200?text=PM+Cert"
   }
 ];
 

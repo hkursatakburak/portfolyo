@@ -7,8 +7,20 @@
 .timeline {
     position: relative;
     max-width: 800px;
-    margin: 0 auto;
-    padding: 40px 0;
+    margin: 20px auto 60px;
+    padding: 20px 0;
+}
+
+.subsection-title {
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--accent-color);
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+
+.experience-subsection {
+    margin-bottom: 60px;
 }
 
 /* Vertical Line */
