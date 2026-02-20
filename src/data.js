@@ -1,151 +1,198 @@
 export const heroData = {
   name: "Hamza Kürşat AKBURAK",
   tagline: "Electrical & Electronics Engineer focused on Radar, Intelligent Systems and Applied AI",
-  intro: "Building intelligent systems that bridge the gap between abstract algorithms and real-world hardware. Passionate about robotics, signal processing, and leadership.",
+  intro: "A brief welcoming sentence introducing him as an engineering student building real-world systems.",
   buttons: [
     { text: "View Projects", link: "#projects", primary: true },
-    { text: "Download CV", link: "/cv.pdf", primary: false } // Placeholder for CV
+    { text: "Download CV", link: "https://drive.google.com/file/d/1bF9plXVfHya5Y1j9Sohhs1xh9WBcyBHD/view?usp=sharing", primary: false }
   ]
 };
 
 export const aboutData = {
-  bio: "I am an Electrical & Electronics Engineering graduate with a strong foundation in signal processing, radar systems, and embedded intelligence. My journey combines technical depth in MATLAB and Python with hands-on robotics experience. Beyond the lab, I believe in the power of collaborative leadership, having led teams in AIESEC and entrepreneurship initiatives. I am driven by the challenge of creating efficient, scalable solutions that solve tangible problems."
+  bio: "I’m an Electrical & Electronics Engineering student interested in radar, sensing technologies and AI. I enjoy working on projects where I can turn theory into something real, especially when it involves building and testing systems. Along the way, I’ve also taken active roles in teams and communities, which helped me grow both technically and personally."
 };
+
+export const projectsTopDescription = "Explore my work across engineering and leadership domains.";
 
 export const techProjects = [
   {
     id: 1,
-    title: "Hyperspectral Soil Analysis",
-    summary: "Graduation Project utilizing hyperspectral imaging for precision agriculture.",
-    description: "Developed a system to analyze soil composition using hyperspectral data. The project involved advanced signal processing techniques to identify nutrient levels and moisture content, enabling optimized irrigation and fertilization strategies.",
-    technologies: ["MATLAB", "Hyperspectral Imaging", "Signal Processing", "Data Analysis"],
-    image: "https://via.placeholder.com/600x400?text=Hyperspectral+Analysis"
+    title: "Sentinel-2 Soil Quality Prediction with AI",
+    summary: "Low-cost soil organic carbon prediction model for the Thrace region.",
+    description: "Developed a machine learning model using satellite imagery to estimate soil quality and reduce reliance on traditional lab analysis.",
+    technologies: ["Sentinel-2", "Random Forest", "NDVI", "SAVI", "BSI"],
+    result: "R² = 0.911, field validation error ≈ 0.46%",
+    image: null
   },
   {
     id: 2,
-    title: "Radar Simulation Suite",
-    summary: "Comprehensive radar system modeling and simulation.",
-    description: "Designed and implemented a modular radar simulation environment in MATLAB. The suite allows for testing various waveform designs, clutter suppression algorithms, and target tracking scenarios.",
-    technologies: ["MATLAB", "Phased Array System Toolbox", "Signal Processing"],
-    image: "https://via.placeholder.com/600x400?text=Radar+Simulation"
+    title: "Hyperspectral Imaging for Soil Analysis",
+    summary: "Ongoing graduation project using hyperspectral camera data and deep learning to estimate soil properties with near-laboratory accuracy for precision agriculture.",
+    description: "Ongoing graduation project using hyperspectral camera data and deep learning to estimate soil properties with near-laboratory accuracy for precision agriculture.",
+    technologies: ["Hyperspectral Imaging", "Deep Learning", "Signal Processing"],
+    image: null
+  }
+];
+
+export const miniProjects = [
+  {
+    id: 1,
+    title: "STM32 Bare-Metal Driver Development",
+    description: "Low-level peripheral drivers built at register level without HAL."
+  },
+  {
+    id: 2,
+    title: "FPGA Communication Modules (UART/SPI)",
+    description: "Custom digital communication protocols implemented on FPGA."
   },
   {
     id: 3,
-    title: "Autonomous Robotics Platform",
-    summary: "SCADA-integrated mobile robot for industrial monitoring.",
-    description: "Built a differential drive mobile robot integrated with a SCADA system for remote monitoring and control. Implemented path planning algorithms and sensor fusion for navigating complex environments.",
-    technologies: ["Python", "ROS", "SCADA", "C++", "Microcontrollers"],
-    image: "https://via.placeholder.com/600x400?text=Robotics+Platform"
+    title: "CAN-Bus Network Simulation & Implementation",
+    description: "Robust communication network for embedded systems."
+  },
+  {
+    id: 4,
+    title: "Custom Minimalist PCB Design",
+    description: "Designing a custom PCB to transition from prototypes to hardware."
+  },
+  {
+    id: 5,
+    title: "Mini Radar System Prototype",
+    description: "Small-scale radar using sensors and signal processing for detection."
+  },
+  {
+    id: 6,
+    title: "Analog Filter Design & Simulation",
+    description: "Analog filter modeling and validation using LTSpice."
   }
 ];
 
 export const socialProjects = [
   {
     id: 101,
-    title: "AIESEC Exchange Experience",
-    summary: "Cross-cultural leadership and volunteer work abroad.",
-    description: "Participated in a global volunteer exchange program, collaborating with diverse international teams to drive community impact projects. Improved cross-cultural communication and adaptability.",
-    image: "https://via.placeholder.com/600x400?text=AIESEC+Exchange"
+    title: "Gençlik İşle Yükseliyor — UNIDES",
+    summary: "Government-supported youth employment project (50,000 TL funding) organizing workshops, summits and career events to connect young people with local decision makers.",
+    description: "Government-supported youth employment project (50,000 TL funding) organizing workshops, summits and career events to connect young people with local decision makers.",
+    image: null
   },
   {
     id: 102,
-    title: "Entrepreneurship Club Leadership",
-    summary: "Leading initiatives to foster student innovation.",
-    description: "served as a board member, organizing workshops, hackathons, and networking events connecting students with industry leaders.",
-    image: "https://via.placeholder.com/600x400?text=Entrepreneurship+Club"
-  },
-  {
-    id: 103,
-    title: "UNIDES Project",
-    summary: "University-Industry collaboration initiative.",
-    description: "Facilitated partnerships between engineering students and local companies to solve real industrial problems, bridging the gap between academia and industry.",
-    image: "https://via.placeholder.com/600x400?text=UNIDES+Project"
+    title: "Entrepreneurship & Social Impact Events",
+    summary: "Organization roles in multiple summits and social responsibility events including Fark Kadında and entrepreneurship summits.",
+    description: "Organization roles in multiple summits and social responsibility events including Fark Kadında and entrepreneurship summits.",
+    image: null
   }
 ];
 
 export const technicalExperience = [
   {
     id: 1,
-    role: "Engineering Intern",
-    company: "Defense Tech Corp (Placeholder)",
-    duration: "June 2024 - Aug 2024",
-    description: "Assisted in the testing and validation of radar subsystems. Developed automated test scripts in Python."
+    role: "Boyahane & Enerji Takımı Intern",
+    company: "Türk Traktör",
+    duration: "30.06.2025 \u2013 28.07.2025",
+    description: "Robotics panel operations, Debugging & reporting, SCADA processes, Process optimization."
   },
   {
     id: 2,
-    role: "Research Assistant",
-    company: "University Lab",
-    duration: "Sep 2023 - June 2024",
-    description: "Conducted research on signal processing algorithms for low-power devices. Co-authored a conference paper."
+    role: "Engineering Intern",
+    company: "T.C. Ministry of Industry and Technology",
+    duration: "05.08.2024 \u2013 02.09.2024",
+    description: "Meter calibration, Transformer inspection, Energy system testing."
   }
 ];
 
 export const leadershipExperience = [
   {
     id: 101,
-    role: "President",
-    company: "University Robotics Club",
-    duration: "Sep 2022 - June 2023",
-    description: "Led a team of 30+ students in designing and building autonomous robots for national competitions. Managed budget and sponsorship acquisition."
+    role: "Editor",
+    company: "Defence Turk",
+    duration: "2024\u2013Present",
+    description: ""
   },
   {
     id: 102,
-    role: "Event Organizer",
-    company: "Tech Summit 2023",
-    duration: "Jan 2023 - May 2023",
-    description: "Organized a university-wide technology summit with over 500 attendees and 20 industry speakers."
+    role: "Chairman",
+    company: "Trakya University Entrepreneurship Club",
+    duration: "2024\u20132025",
+    description: ""
+  },
+  {
+    id: 103,
+    role: "Vice Chairman",
+    company: "Trakya University Entrepreneurship Club",
+    duration: "2023\u20132024",
+    description: ""
+  },
+  {
+    id: 104,
+    role: "Board Member",
+    company: "Trakya University Entrepreneurship Club",
+    duration: "2022\u20132023",
+    description: ""
+  },
+  {
+    id: 105,
+    role: "Instructor",
+    company: "AIESEC",
+    duration: "2024",
+    description: ""
+  },
+  {
+    id: 106,
+    role: "Technical Support Team Leader",
+    company: "Trakya Career Fair",
+    duration: "2023",
+    description: ""
   }
+];
+
+export const awardsData = [
+  { text: "Special Jury Prize \u2014 Oxford Readers (2022)", description: "Academic achievement award." },
+  { text: "Balkan Wushu Championship \u2014 2019", description: "International championship title." }
 ];
 
 export const programsData = [
   {
     id: 1,
-    program: "AI Summer Academy",
-    organization: "Deep Learning Institute",
-    description: "Selected for an intensive 2-week program focused on advanced neural network architectures.",
-    image: "https://via.placeholder.com/100x100?text=AI+Academy"
+    program: "Yapay Zeka ve Teknoloji Akademisi",
+    organization: "AI Fellow",
+    year: "2026",
+    description: ""
   },
   {
     id: 2,
-    program: "Future Leaders Workshop",
-    organization: "Global Tech",
-    description: "Participated in leadership training and mentorship sessions with industry executives.",
-    image: "https://via.placeholder.com/100x100?text=Leaders+Workshop"
+    program: "1st Social Impact Workshop",
+    organization: "Trakya University Representative",
+    year: "",
+    description: ""
   }
 ];
 
 export const certificatesData = [
-  {
-    id: 1,
-    name: "Machine Learning Specialist",
-    description: "Issued by Coursera (Stanford University). Covers supervised and unsupervised learning.",
-    image: "https://via.placeholder.com/300x200?text=ML+Cert"
-  },
-  {
-    id: 2,
-    name: "Embedded Systems Professional",
-    description: "Issued by Arm Education. Focus on ARM Cortex-M architecture and programming.",
-    image: "https://via.placeholder.com/300x200?text=Embedded+Cert"
-  },
-  {
-    id: 3,
-    name: "Project Management Fundamentals",
-    description: "Issued by PMI. Introduction to agile methodologies and project lifecycle.",
-    image: "https://via.placeholder.com/300x200?text=PM+Cert"
-  }
-];
-
-export const awardsData = [
-  { text: "Oxford Readers Special Jury Prize" },
-  { text: "Balkan Wushu Championship" }
+  { id: 1, name: "Drone Development & Coding", organization: "Mudanya University", year: "2024" },
+  { id: 2, name: "Robotic Coding", organization: "Miuul", year: "2024" },
+  { id: 3, name: "Arduino Instructor Training", organization: "Başkent University", year: "2023" },
+  { id: 4, name: "Effective Communication Strategies", organization: "BTK Academy", year: "2023" },
+  { id: 5, name: "Storytelling & Short Movie Workshop", organization: "Oxford Readers", year: "2022" },
+  { id: 6, name: "IHA-1 Amateur Drone Pilot License", organization: "SHGM", year: "2021" },
+  { id: 7, name: "Working in a Digital World", organization: "IBM", year: "2024" },
+  { id: 8, name: "Leadership Development Experience", organization: "AIESEC", year: "2024" }
 ];
 
 export const skillsData = [
-  "MATLAB", "Python", "SCADA", "Robotics", "Git", "Signal Processing", "C++", "Embedded Systems", "Leadership", "Project Management"
+  "Embedded Systems", "Signal Processing", "Machine Learning", "Radar & Sensing Technologies", "Python", "MATLAB", "Git & GitHub", "LTSpice", "Leadership"
+];
+
+export const educationData = [
+  {
+    degree: "Electrical & Electronics Engineering",
+    university: "Trakya University",
+    details: "30% English curriculum"
+  }
 ];
 
 export const contactData = {
-  email: "hamza.akburak@example.com",
-  linkedin: "https://linkedin.com/in/hamza-akburak",
-  github: "https://github.com/hamza-akburak"
+  email: "akburakkursat54@gmail.com",
+  linkedin: "https://www.linkedin.com/in/hkursat-akburak/",
+  github: "https://github.com/hkursatakburak"
 };

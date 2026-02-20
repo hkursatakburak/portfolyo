@@ -15,10 +15,10 @@ const Contact = () => {
                     <a href={`mailto:${contactData.email}`} className="contact-btn email">
                         <span className="icon">✉️</span> {contactData.email}
                     </a>
-                    <a href={contactData.linkedin} target="_blank" rel="https://www.linkedin.com/in/hkursat-akburak" className="contact-btn linkedin">
+                    <a href={contactData.linkedin} target="_blank" rel="noopener noreferrer" className="contact-btn linkedin">
                         <span className="icon">in</span> LinkedIn
                     </a>
-                    <a href={contactData.github} target="_blank" rel="https://github.com/hkursatakburak" className="contact-btn github">
+                    <a href={contactData.github} target="_blank" rel="noopener noreferrer" className="contact-btn github">
                         <span className="icon">🐙</span> GitHub
                     </a>
                 </div>

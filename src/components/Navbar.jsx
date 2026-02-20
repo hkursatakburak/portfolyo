@@ -14,7 +14,7 @@ const Navbar = () => {
                 setScrolled(false);
             }
 
-            const sections = ['hero', 'about', 'projects', 'experience', 'awards', 'skills', 'contact'];
+            const sections = ['hero', 'about', 'projects', 'experience', 'programs', 'certificates', 'awards', 'skills', 'education', 'contact'];
             let currentSection = '';
 
             for (const section of sections) {
@@ -42,8 +42,11 @@ const Navbar = () => {
         { name: 'About', href: '#about' },
         { name: 'Projects', href: '#projects' },
         { name: 'Experience', href: '#experience' },
+        { name: 'Programs', href: '#programs' },
+        { name: 'Certificates', href: '#certificates' },
         { name: 'Awards', href: '#awards' },
         { name: 'Skills', href: '#skills' },
+        { name: 'Education', href: '#education' },
         { name: 'Contact', href: '#contact' },
     ];
 

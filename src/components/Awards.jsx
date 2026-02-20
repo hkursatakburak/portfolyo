@@ -11,7 +11,10 @@ const Awards = () => {
                     {awardsData.map((award, index) => (
                         <div key={index} className="award-card fade-in">
                             <div className="award-icon">🏆</div>
-                            <h3 className="award-text">{award.text}</h3>
+                            <div className="award-content">
+                                <h3 className="award-text">{award.text}</h3>
+                                {award.description && <p className="award-desc">{award.description}</p>}
+                            </div>
                         </div>
                     ))}
                 </div>

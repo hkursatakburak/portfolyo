@@ -15,8 +15,11 @@ const Modal = ({ show, onClose, project }) => {
                     <p className="modal-tagline">{project.summary}</p>
                 </div>
                 <div className="modal-body">
-                    <img src={project.image} alt={project.title} className="modal-image" />
+                    {project.image && <img src={project.image} alt={project.title} className="modal-image" />}
                     <p className="modal-description">{project.description}</p>
+                    {project.result && (
+                        <p className="modal-result"><strong>Result:</strong> {project.result}</p>
+                    )}
                     <div className="modal-technologies">
                         {project.technologies && project.technologies.map((tech, index) => (
                             <span key={index} className="tech-tag">{tech}</span>

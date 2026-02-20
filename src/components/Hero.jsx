@@ -10,15 +10,19 @@ const Hero = () => {
                 <h2 className="hero-tagline">{heroData.tagline}</h2>
                 <p className="hero-intro">{heroData.intro}</p>
                 <div className="hero-buttons">
-                    {heroData.buttons.map((btn, index) => (
-                        <a
-                            key={index}
-                            href={btn.link}
-                            className={`btn ${btn.primary ? 'btn-primary' : 'btn-secondary'}`}
-                        >
-                            {btn.text}
-                        </a>
-                    ))}
+                    {heroData.buttons.map((btn, index) => {
+                        const isExternal = btn.link.startsWith('http');
+                        return (
+                            <a
+                                key={index}
+                                href={btn.link}
+                                {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                                className={`btn ${btn.primary ? 'btn-primary' : 'btn-secondary'}`}
+                            >
+                                {btn.text}
+                            </a>
+                        );
+                    })}
                 </div>
             </div>
         </section>

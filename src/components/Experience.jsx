@@ -9,7 +9,7 @@ const ExperienceItem = ({ item, align }) => (
             <span className="timeline-date">{item.duration}</span>
             <h3 className="timeline-role">{item.role}</h3>
             <h4 className="timeline-company">{item.company}</h4>
-            <p className="timeline-description">{item.description}</p>
+            {item.description && <p className="timeline-description">{item.description}</p>}
         </div>
     </div>
 );

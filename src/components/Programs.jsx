@@ -13,8 +13,10 @@ const Programs = () => {
                             {item.image && <img src={item.image} alt={item.program} className="program-image" />}
                             <div className="program-content">
                                 <h3 className="program-name">{item.program}</h3>
-                                <h4 className="program-org">{item.organization}</h4>
-                                <p className="program-desc">{item.description}</p>
+                                <h4 className="program-org">
+                                    {item.organization} {item.year && `(${item.year})`}
+                                </h4>
+                                {item.description && <p className="program-desc">{item.description}</p>}
                             </div>
                         </div>
                     ))}

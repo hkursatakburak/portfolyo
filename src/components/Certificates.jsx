@@ -13,7 +13,8 @@ const Certificates = () => {
                             {item.image && <div className="cert-img-container"><img src={item.image} alt={item.name} className="certificate-image" /></div>}
                             <div className="certificate-content">
                                 <h3 className="certificate-name">{item.name}</h3>
-                                <p className="certificate-desc">{item.description}</p>
+                                <p className="certificate-org">{item.organization}</p>
+                                <span className="certificate-year">{item.year}</span>
                             </div>
                         </div>
                     ))}
