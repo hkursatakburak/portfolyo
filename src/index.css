@@ -103,3 +103,13 @@ section {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--accent-color);
 }
+
+/* Language Switch Transition */
+.lang-transition {
+  transition: opacity 200ms ease-in-out;
+  opacity: 1;
+}
+
+.lang-trans-active {
+  opacity: 0;
+}

@@ -11,8 +11,11 @@ import Skills from './components/Skills';
 import Education from './components/Education';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import { LanguageProvider, useLanguage } from './context/LanguageContext';
 
-function App() {
+const AppContent = () => {
+  const { isTransitioning } = useLanguage();
+
   useEffect(() => {
     const observerOptions = {
       root: null,
@@ -38,7 +41,7 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div className={`App lang-transition ${isTransitioning ? 'lang-trans-active' : ''}`}>
       <Navbar />
       <main>
         <Hero />
@@ -54,6 +57,14 @@ function App() {
       </main>
       <Footer />
     </div>
+  );
+};
+
+function App() {
+  return (
+    <LanguageProvider>
+      <AppContent />
+    </LanguageProvider>
   );
 }
 

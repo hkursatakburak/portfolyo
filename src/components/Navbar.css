@@ -118,3 +118,37 @@
         left: 0;
     }
 }
+
+.nav-controls {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.lang-toggle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    user-select: none;
+}
+
+.lang-option {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.lang-option:hover {
+    color: var(--text-primary);
+}
+
+.lang-option.active {
+    color: var(--accent-color);
+}
+
+.lang-separator {
+    color: var(--border-color);
+    font-weight: 300;
+}

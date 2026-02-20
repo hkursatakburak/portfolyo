@@ -1,14 +1,17 @@
 import React from 'react';
-import { contactData } from '../data';
+import { contactData, siteText } from '../data';
+import { useLanguage } from '../context/LanguageContext';
 import './Contact.css';
 
 const Contact = () => {
+    const { language } = useLanguage();
+
     return (
         <section id="contact" className="contact-section">
             <div className="container contact-container fade-in">
-                <h2 className="section-title">Get In Touch</h2>
+                <h2 className="section-title">{siteText.sections.contact[language]}</h2>
                 <p className="contact-text">
-                    I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions.
+                    {siteText.ui.contactIntro[language]}
                 </p>
 
                 <div className="contact-links">

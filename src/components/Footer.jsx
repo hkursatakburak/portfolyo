@@ -1,7 +1,10 @@
 import React from 'react';
-import { heroData } from '../data';
+import { heroData, siteText } from '../data';
+import { useLanguage } from '../context/LanguageContext';
 
 const Footer = () => {
+    const { language } = useLanguage();
+
     return (
         <footer style={{
             background: 'var(--bg-secondary)',
@@ -11,7 +14,7 @@ const Footer = () => {
             borderTop: '1px solid var(--border-color)'
         }}>
             <p>&copy; {new Date().getFullYear()} {heroData.name}. All Rights Reserved.</p>
-            <p style={{ fontSize: '0.9rem', marginTop: '10px' }}>Designed & Built with React</p>
+            <p style={{ fontSize: '0.9rem', marginTop: '10px' }}>{siteText.ui.footer[language]} React</p>
         </footer>
     );
 };

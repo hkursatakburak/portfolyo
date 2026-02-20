@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import './Navbar.css';
+import { useLanguage } from '../context/LanguageContext';
+import { siteText } from '../data';
 
 const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
+    const { language, toggleLanguage } = useLanguage();
     const [activeHash, setActiveHash] = useState('');
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -38,16 +41,16 @@ const Navbar = () => {
     }, [activeHash]);
 
     const navLinks = [
-        { name: 'Home', href: '#hero' },
-        { name: 'About', href: '#about' },
-        { name: 'Projects', href: '#projects' },
-        { name: 'Experience', href: '#experience' },
-        { name: 'Programs', href: '#programs' },
-        { name: 'Certificates', href: '#certificates' },
-        { name: 'Awards', href: '#awards' },
-        { name: 'Skills', href: '#skills' },
-        { name: 'Education', href: '#education' },
-        { name: 'Contact', href: '#contact' },
+        { name: siteText.nav.home[language], href: '#hero' },
+        { name: siteText.nav.about[language], href: '#about' },
+        { name: siteText.nav.projects[language], href: '#projects' },
+        { name: siteText.nav.experience[language], href: '#experience' },
+        { name: siteText.nav.programs[language], href: '#programs' },
+        { name: siteText.nav.certificates[language], href: '#certificates' },
+        { name: siteText.nav.awards[language], href: '#awards' },
+        { name: siteText.nav.skills[language], href: '#skills' },
+        { name: siteText.nav.education[language], href: '#education' },
+        { name: siteText.nav.contact[language], href: '#contact' },
     ];
 
     return (
@@ -56,9 +59,9 @@ const Navbar = () => {
                 <a href="#hero" className="logo">HKA.</a>
 
                 <div className={`nav-links ${mobileMenuOpen ? 'active' : ''}`}>
-                    {navLinks.map((link) => (
+                    {navLinks.map((link, idx) => (
                         <a
-                            key={link.name}
+                            key={idx}
                             href={link.href}
                             className={activeHash === link.href ? 'active-link' : ''}
                             onClick={() => setMobileMenuOpen(false)}
@@ -68,10 +71,24 @@ const Navbar = () => {
                     ))}
                 </div>
 
-                <div className={`hamburger ${mobileMenuOpen ? 'active' : ''}`} onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
-                    <span className="bar"></span>
-                    <span className="bar"></span>
-                    <span className="bar"></span>
+                <div className="nav-controls">
+                    <div className="lang-toggle">
+                        <span
+                            className={`lang-option ${language === 'en' ? 'active' : ''}`}
+                            onClick={() => toggleLanguage('en')}
+                        >EN</span>
+                        <span className="lang-separator">|</span>
+                        <span
+                            className={`lang-option ${language === 'tr' ? 'active' : ''}`}
+                            onClick={() => toggleLanguage('tr')}
+                        >TR</span>
+                    </div>
+
+                    <div className={`hamburger ${mobileMenuOpen ? 'active' : ''}`} onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+                        <span className="bar"></span>
+                        <span className="bar"></span>
+                        <span className="bar"></span>
+                    </div>
                 </div>
             </div>
         </nav>
