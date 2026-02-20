@@ -22,7 +22,7 @@ export const techProjects = [
     description: "Developed a machine learning model using satellite imagery to estimate soil quality and reduce reliance on traditional lab analysis.",
     technologies: ["Sentinel-2", "Random Forest", "NDVI", "SAVI", "BSI"],
     result: "R² = 0.911, field validation error ≈ 0.46%",
-    image: null
+    image: "https://via.placeholder.com/600x400?text=Sentinel-2+Soil+Prediction"
   },
   {
     id: 2,
@@ -30,7 +30,8 @@ export const techProjects = [
     summary: "Ongoing graduation project using hyperspectral camera data and deep learning to estimate soil properties with near-laboratory accuracy for precision agriculture.",
     description: "Ongoing graduation project using hyperspectral camera data and deep learning to estimate soil properties with near-laboratory accuracy for precision agriculture.",
     technologies: ["Hyperspectral Imaging", "Deep Learning", "Signal Processing"],
-    image: null
+    image: "https://via.placeholder.com/600x400?text=Hyperspectral+Imaging",
+    badge: "Ongoing"
   }
 ];
 
@@ -38,32 +39,38 @@ export const miniProjects = [
   {
     id: 1,
     title: "STM32 Bare-Metal Driver Development",
-    description: "Low-level peripheral drivers built at register level without HAL."
+    description: "Low-level peripheral drivers built at register level without HAL.",
+    image: "https://via.placeholder.com/600x400?text=STM32"
   },
   {
     id: 2,
     title: "FPGA Communication Modules (UART/SPI)",
-    description: "Custom digital communication protocols implemented on FPGA."
+    description: "Custom digital communication protocols implemented on FPGA.",
+    image: "https://via.placeholder.com/600x400?text=FPGA"
   },
   {
     id: 3,
     title: "CAN-Bus Network Simulation & Implementation",
-    description: "Robust communication network for embedded systems."
+    description: "Robust communication network for embedded systems.",
+    image: "https://via.placeholder.com/600x400?text=CAN-Bus"
   },
   {
     id: 4,
     title: "Custom Minimalist PCB Design",
-    description: "Designing a custom PCB to transition from prototypes to hardware."
+    description: "Designing a custom PCB to transition from prototypes to hardware.",
+    image: "https://via.placeholder.com/600x400?text=PCB+Design"
   },
   {
     id: 5,
     title: "Mini Radar System Prototype",
-    description: "Small-scale radar using sensors and signal processing for detection."
+    description: "Small-scale radar using sensors and signal processing for detection.",
+    image: "https://via.placeholder.com/600x400?text=Mini+Radar"
   },
   {
     id: 6,
     title: "Analog Filter Design & Simulation",
-    description: "Analog filter modeling and validation using LTSpice."
+    description: "Analog filter modeling and validation using LTSpice.",
+    image: "https://via.placeholder.com/600x400?text=Analog+Filter"
   }
 ];
 
@@ -73,14 +80,14 @@ export const socialProjects = [
     title: "Gençlik İşle Yükseliyor — UNIDES",
     summary: "Government-supported youth employment project (50,000 TL funding) organizing workshops, summits and career events to connect young people with local decision makers.",
     description: "Government-supported youth employment project (50,000 TL funding) organizing workshops, summits and career events to connect young people with local decision makers.",
-    image: null
+    image: "https://via.placeholder.com/600x400?text=UNIDES+Project"
   },
   {
     id: 102,
     title: "Entrepreneurship & Social Impact Events",
     summary: "Organization roles in multiple summits and social responsibility events including Fark Kadında and entrepreneurship summits.",
     description: "Organization roles in multiple summits and social responsibility events including Fark Kadında and entrepreneurship summits.",
-    image: null
+    image: "https://via.placeholder.com/600x400?text=Social+Impact+Events"
   }
 ];
 
@@ -107,42 +114,42 @@ export const leadershipExperience = [
     role: "Editor",
     company: "Defence Turk",
     duration: "2024\u2013Present",
-    description: ""
+    description: "Follow daily defense industry news and sources, collect articles from multiple platforms, produce concise and accurate summaries, and write reports aligned with journalistic standards."
   },
   {
     id: 102,
     role: "Chairman",
     company: "Trakya University Entrepreneurship Club",
     duration: "2024\u20132025",
-    description: ""
+    description: "Organized seminars in entrepreneurship, technology and finance, launched a community podcast, participated as a guest in Campus Leaders Radio, led social responsibility events such as \"Fark Kadında\", arranged technical visits, and led the UNIDES-supported \"Gençlik İşle Yükseliyor\" project."
   },
   {
     id: 103,
     role: "Vice Chairman",
     company: "Trakya University Entrepreneurship Club",
     duration: "2023\u20132024",
-    description: ""
+    description: "Supported strategic planning, coordinated event operations, assisted in partnerships and sponsorship processes, and ensured continuity between board teams."
   },
   {
     id: 104,
     role: "Board Member",
     company: "Trakya University Entrepreneurship Club",
     duration: "2022\u20132023",
-    description: ""
+    description: "Contributed to event organization, logistics planning and communication processes while supporting community activities and operational tasks."
   },
   {
     id: 105,
     role: "Instructor",
     company: "AIESEC",
     duration: "2024",
-    description: ""
+    description: "Delivered lessons to high school students in English within the international Eat4Change project in Romania, gaining experience in cross-cultural communication and teaching."
   },
   {
     id: 106,
     role: "Technical Support Team Leader",
     company: "Trakya Career Fair",
     duration: "2023",
-    description: ""
+    description: "Led the on-site technical support team, coordinated rapid response to technical issues, and ensured smooth operation of event infrastructure."
   }
 ];
 
@@ -154,8 +161,8 @@ export const awardsData = [
 export const programsData = [
   {
     id: 1,
-    program: "Yapay Zeka ve Teknoloji Akademisi",
-    organization: "AI Fellow",
+    program: "AI Fellow",
+    organization: "Yapay Zeka ve Teknoloji Akademisi",
     year: "2026",
     description: ""
   },

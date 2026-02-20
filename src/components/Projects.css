@@ -47,6 +47,20 @@
     border-color: var(--accent-color);
 }
 
+.project-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: var(--accent-color);
+    color: var(--bg-primary);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    z-index: 10;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
 /* Card Image Wrapper */
 .card-image-wrapper {
     position: relative;
@@ -83,7 +97,7 @@
     transition: opacity 0.3s ease;
 }
 
-.tech-card:hover .card-overlay {
+.project-card:hover .card-overlay {
     opacity: 1;
 }
 

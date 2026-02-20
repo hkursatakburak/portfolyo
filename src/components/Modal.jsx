@@ -16,6 +16,13 @@ const Modal = ({ show, onClose, project }) => {
                 </div>
                 <div className="modal-body">
                     {project.image && <img src={project.image} alt={project.title} className="modal-image" />}
+                    {project.gallery && (
+                        <div className="modal-gallery" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '10px', marginBottom: '20px' }}>
+                            {project.gallery.map((img, i) => (
+                                <img key={i} src={img} alt={`${project.title} gallery ${i}`} style={{ width: '100%', borderRadius: '8px', objectFit: 'cover' }} />
+                            ))}
+                        </div>
+                    )}
                     <p className="modal-description">{project.description}</p>
                     {project.result && (
                         <p className="modal-result"><strong>Result:</strong> {project.result}</p>

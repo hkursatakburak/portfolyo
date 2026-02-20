@@ -33,6 +33,9 @@ const Projects = () => {
                                 className="project-card tech-card"
                                 onClick={() => openModal(project)}
                             >
+                                {project.badge && (
+                                    <div className="project-badge">{project.badge}</div>
+                                )}
                                 {project.image && (
                                     <div className="card-image-wrapper">
                                         <img src={project.image} alt={project.title} className="card-image" />
@@ -59,7 +62,18 @@ const Projects = () => {
                     <h3 className="category-title">Mini / Experimental Projects</h3>
                     <div className="projects-grid mini-grid">
                         {miniProjects.map((project) => (
-                            <div key={project.id} className="project-card mini-card">
+                            <div key={project.id} className="project-card mini-card" onClick={() => openModal(project)}>
+                                {project.badge && (
+                                    <div className="project-badge">{project.badge}</div>
+                                )}
+                                {project.image && (
+                                    <div className="card-image-wrapper">
+                                        <img src={project.image} alt={project.title} className="card-image" />
+                                        <div className="card-overlay">
+                                            <span>View Project</span>
+                                        </div>
+                                    </div>
+                                )}
                                 <div className="card-content">
                                     <h4>{project.title}</h4>
                                     <p>{project.description}</p>
@@ -73,10 +87,16 @@ const Projects = () => {
                     <h3 className="category-title">Social & Leadership Projects</h3>
                     <div className="projects-grid">
                         {socialProjects.map((project) => (
-                            <div key={project.id} className="project-card social-card">
+                            <div key={project.id} className="project-card social-card" onClick={() => openModal(project)}>
+                                {project.badge && (
+                                    <div className="project-badge">{project.badge}</div>
+                                )}
                                 {project.image && (
                                     <div className="card-image-wrapper">
                                         <img src={project.image} alt={project.title} className="card-image" />
+                                        <div className="card-overlay">
+                                            <span>View Project</span>
+                                        </div>
                                     </div>
                                 )}
                                 <div className="card-content">
