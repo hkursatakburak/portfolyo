@@ -52,7 +52,7 @@ export const techProjects = [
     },
     technologies: ["Sentinel-2", "Random Forest", "NDVI", "SAVI", "BSI"],
     result: { en: "R² = 0.911, field validation error ≈ 0.46%", tr: "R² = 0.911, saha doğrulama hatası ≈ %0.46" },
-    image: "/projects/Yapay Zeka ile Sentinel-2 Toprak Kalitesi Tahmini.png"
+    image: "/projects/sentinel.png"
   },
   {
     id: 2,
@@ -60,7 +60,7 @@ export const techProjects = [
     summary: { en: "Ongoing graduation project using hyperspectral camera data and deep learning to estimate soil properties with near-laboratory accuracy for precision agriculture.", tr: "Hassas tarım için laboratuvara yakın doğrulukta toprak özelliklerini tahmin etmek amacıyla hiperspektral kamera verileri ve derin öğrenme kullanan devam eden mezuniyet projesi." },
     description: { en: "Ongoing graduation project using hyperspectral camera data and deep learning to estimate soil properties with near-laboratory accuracy for precision agriculture.", tr: "Hassas tarım için laboratuvara yakın doğrulukta toprak özelliklerini tahmin etmek amacıyla hiperspektral kamera verileri ve derin öğrenme kullanan devam eden mezuniyet projesi." },
     technologies: ["Hyperspectral Imaging", "Deep Learning", "Signal Processing"],
-    image: "/projects/Toprak Analizi İçin Hiperspektral Görüntüleme.png",
+    image: "/projects/hiperspektral.png",
     badge: { en: "Ongoing", tr: "Devam Ediyor" }
   }
 ];
@@ -110,14 +110,14 @@ export const socialProjects = [
     title: { en: "Gençlik İşle Yükseliyor — UNIDES", tr: "Gençlik İşle Yükseliyor — UNIDES" },
     summary: { en: "Government-supported youth employment project (50,000 TL funding) organizing workshops, summits and career events to connect young people with local decision makers.", tr: "Gençleri yerel karar alıcılarla buluşturmak için çalıştaylar, zirveler ve kariyer etkinlikleri düzenleyen devlet destekli gençlik istihdam projesi (50.000 TL fon)." },
     description: { en: "Government-supported youth employment project (50,000 TL funding) organizing workshops, summits and career events to connect young people with local decision makers.", tr: "Gençleri yerel karar alıcılarla buluşturmak için çalıştaylar, zirveler ve kariyer etkinlikleri düzenleyen devlet destekli gençlik istihdam projesi (50.000 TL fon)." },
-    image: "/projects/Gençlik İşle Yükseliyor — UNIDES.jpg"
+    image: "/projects/unides.jpg"
   },
   {
     id: 102,
     title: { en: "Entrepreneurship & Social Impact Events", tr: "Girişimcilik ve Sosyal Etki Etkinlikleri" },
     summary: { en: "Organization roles in multiple summits and social responsibility events including Fark Kadında and entrepreneurship summits.", tr: "Fark Kadında ve girişimcilik zirveleri dahil olmak üzere birçok zirve ve sosyal sorumluluk etkinliğinde organizasyon rolleri." },
     description: { en: "Organization roles in multiple summits and social responsibility events including Fark Kadında and entrepreneurship summits.", tr: "Fark Kadında ve girişimcilik zirveleri dahil olmak üzere birçok zirve ve sosyal sorumluluk etkinliğinde organizasyon rolleri." },
-    image: "/projects/Girişimcilik ve Sosyal Etki Etkinlikleri.jpg"
+    image: "/projects/girisimcilik.jpg"
   }
 ];
 
