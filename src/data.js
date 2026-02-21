@@ -1,3 +1,4 @@
+import React from 'react';
 export const heroData = {
   name: "Hamza Kürşat AKBURAK",
   tagline: {
@@ -33,10 +34,25 @@ export const techProjects = [
     id: 1,
     title: { en: "Sentinel-2 Soil Quality Prediction with AI", tr: "Yapay Zeka ile Sentinel-2 Toprak Kalitesi Tahmini" },
     summary: { en: "Low-cost soil organic carbon prediction model for the Thrace region.", tr: "Trakya bölgesi için düşük maliyetli toprak organik karbon tahmin modeli." },
-    description: { en: "Developed a machine learning model using satellite imagery to estimate soil quality and reduce reliance on traditional lab analysis.", tr: "Geleneksel laboratuvar analizine bağımlılığı azaltmak ve toprak kalitesini tahmin etmek için uydu görüntülerini kullanarak bir makine öğrenimi modeli geliştirildi." },
+    description: {
+      en: [
+        "Developed a machine learning model using satellite imagery to estimate soil quality and reduce reliance on traditional lab analysis.",
+        React.createElement("br", { key: "en-br1" }),
+        React.createElement("br", { key: "en-br2" }),
+        "Raporu Gör → ",
+        React.createElement("a", { key: "en-link", href: "https://drive.google.com/file/d/19Fa27QswGFamnFSkOXoNrk-ezOcM5WLF/view?usp=sharing", target: "_blank", rel: "noopener noreferrer" }, "https://drive.google.com/file/d/19Fa27QswGFamnFSkOXoNrk-ezOcM5WLF/view?usp=sharing")
+      ],
+      tr: [
+        "Geleneksel laboratuvar analizine bağımlılığı azaltmak ve toprak kalitesini tahmin etmek için uydu görüntülerini kullanarak bir makine öğrenimi modeli geliştirildi.",
+        React.createElement("br", { key: "tr-br1" }),
+        React.createElement("br", { key: "tr-br2" }),
+        "Raporu Gör → ",
+        React.createElement("a", { key: "tr-link", href: "https://drive.google.com/file/d/19Fa27QswGFamnFSkOXoNrk-ezOcM5WLF/view?usp=sharing", target: "_blank", rel: "noopener noreferrer" }, "https://drive.google.com/file/d/19Fa27QswGFamnFSkOXoNrk-ezOcM5WLF/view?usp=sharing")
+      ]
+    },
     technologies: ["Sentinel-2", "Random Forest", "NDVI", "SAVI", "BSI"],
     result: { en: "R² = 0.911, field validation error ≈ 0.46%", tr: "R² = 0.911, saha doğrulama hatası ≈ %0.46" },
-    image: "https://via.placeholder.com/600x400?text=Sentinel-2+Soil+Prediction"
+    image: "/projects/Yapay Zeka ile Sentinel-2 Toprak Kalitesi Tahmini.png"
   },
   {
     id: 2,
@@ -44,7 +60,7 @@ export const techProjects = [
     summary: { en: "Ongoing graduation project using hyperspectral camera data and deep learning to estimate soil properties with near-laboratory accuracy for precision agriculture.", tr: "Hassas tarım için laboratuvara yakın doğrulukta toprak özelliklerini tahmin etmek amacıyla hiperspektral kamera verileri ve derin öğrenme kullanan devam eden mezuniyet projesi." },
     description: { en: "Ongoing graduation project using hyperspectral camera data and deep learning to estimate soil properties with near-laboratory accuracy for precision agriculture.", tr: "Hassas tarım için laboratuvara yakın doğrulukta toprak özelliklerini tahmin etmek amacıyla hiperspektral kamera verileri ve derin öğrenme kullanan devam eden mezuniyet projesi." },
     technologies: ["Hyperspectral Imaging", "Deep Learning", "Signal Processing"],
-    image: "https://via.placeholder.com/600x400?text=Hyperspectral+Imaging",
+    image: "/projects/Toprak Analizi İçin Hiperspektral Görüntüleme.png",
     badge: { en: "Ongoing", tr: "Devam Ediyor" }
   }
 ];
@@ -94,14 +110,14 @@ export const socialProjects = [
     title: { en: "Gençlik İşle Yükseliyor — UNIDES", tr: "Gençlik İşle Yükseliyor — UNIDES" },
     summary: { en: "Government-supported youth employment project (50,000 TL funding) organizing workshops, summits and career events to connect young people with local decision makers.", tr: "Gençleri yerel karar alıcılarla buluşturmak için çalıştaylar, zirveler ve kariyer etkinlikleri düzenleyen devlet destekli gençlik istihdam projesi (50.000 TL fon)." },
     description: { en: "Government-supported youth employment project (50,000 TL funding) organizing workshops, summits and career events to connect young people with local decision makers.", tr: "Gençleri yerel karar alıcılarla buluşturmak için çalıştaylar, zirveler ve kariyer etkinlikleri düzenleyen devlet destekli gençlik istihdam projesi (50.000 TL fon)." },
-    image: "https://via.placeholder.com/600x400?text=UNIDES+Project"
+    image: "/projects/Gençlik İşle Yükseliyor — UNIDES.jpg"
   },
   {
     id: 102,
     title: { en: "Entrepreneurship & Social Impact Events", tr: "Girişimcilik ve Sosyal Etki Etkinlikleri" },
     summary: { en: "Organization roles in multiple summits and social responsibility events including Fark Kadında and entrepreneurship summits.", tr: "Fark Kadında ve girişimcilik zirveleri dahil olmak üzere birçok zirve ve sosyal sorumluluk etkinliğinde organizasyon rolleri." },
     description: { en: "Organization roles in multiple summits and social responsibility events including Fark Kadında and entrepreneurship summits.", tr: "Fark Kadında ve girişimcilik zirveleri dahil olmak üzere birçok zirve ve sosyal sorumluluk etkinliğinde organizasyon rolleri." },
-    image: "https://via.placeholder.com/600x400?text=Social+Impact+Events"
+    image: "/projects/Girişimcilik ve Sosyal Etki Etkinlikleri.jpg"
   }
 ];
 
