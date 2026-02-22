@@ -124,7 +124,7 @@ export const socialProjects = [
 export const technicalExperience = [
   {
     id: 1,
-    role: { en: "Boyahane & Enerji Takımı Intern", tr: "Boyahane & Enerji Takımı Stajyeri" },
+    role: { en: "Paint Shop & Energy Team Intern", tr: "Boyahane & Enerji Takımı Stajyeri" },
     company: "Türk Traktör",
     duration: "30.06.2025 \u2013 28.07.2025",
     description: { en: "Robotics panel operations, Debugging & reporting, SCADA processes, Process optimization.", tr: "Robotik panel operasyonları, Hata ayıklama ve raporlama, SCADA süreçleri, Süreç optimizasyonu." }
@@ -154,20 +154,6 @@ export const leadershipExperience = [
     description: { en: "Organized seminars in entrepreneurship, technology and finance, launched a community podcast, participated as a guest in Campus Leaders Radio, led social responsibility events such as \"Fark Kadında\", arranged technical visits, and led the UNIDES-supported \"Gençlik İşle Yükseliyor\" project.", tr: "Girişimcilik, teknoloji ve finans alanlarında seminerler düzenlendi, bir topluluk podcast'i başlatıldı, Kampüs Liderleri Radyosu'na konuk olarak katılındı, \"Fark Kadında\" gibi sosyal sorumluluk etkinliklerine liderlik edildi, teknik geziler ayarlandı ve UNIDES destekli \"Gençlik İşle Yükseliyor\" projesi yürütüldü." }
   },
   {
-    id: 103,
-    role: { en: "Vice Chairman", tr: "Yönetim Kurulu Başkan Yardımcısı" },
-    company: { en: "Trakya University Entrepreneurship Club", tr: "Trakya Üniversitesi Girişimcilik Topluluğu" },
-    duration: "2023\u20132024",
-    description: { en: "Supported strategic planning, coordinated event operations, assisted in partnerships and sponsorship processes, and ensured continuity between board teams.", tr: "Stratejik planlamaya destek verildi, etkinlik operasyonları koordine edildi, ortaklıklar ve sponsorluk süreçlerine yardımcı olundu ve yönetim kurulları arasında süreklilik sağlandı." }
-  },
-  {
-    id: 104,
-    role: { en: "Board Member", tr: "Yönetim Kurulu Üyesi" },
-    company: { en: "Trakya University Entrepreneurship Club", tr: "Trakya Üniversitesi Girişimcilik Topluluğu" },
-    duration: "2022\u20132023",
-    description: { en: "Contributed to event organization, logistics planning and communication processes while supporting community activities and operational tasks.", tr: "Topluluk etkinliklerini ve operasyonel görevleri desteklerken etkinlik organizasyonu, lojistik planlama ve iletişim süreçlerine katkıda bulunuldu." }
-  },
-  {
     id: 105,
     role: { en: "Instructor", tr: "Eğitmen" },
     company: "AIESEC",
@@ -175,11 +161,25 @@ export const leadershipExperience = [
     description: { en: "Delivered lessons to high school students in English within the international Eat4Change project in Romania, gaining experience in cross-cultural communication and teaching.", tr: "Romanya'daki uluslararası Eat4Change projesi kapsamında lise öğrencilerine İngilizce dersler verilerek kültürlerarası iletişim ve öğretim deneyimi kazanıldı." }
   },
   {
+    id: 103,
+    role: { en: "Vice Chairman", tr: "Yönetim Kurulu Başkan Yardımcısı" },
+    company: { en: "Trakya University Entrepreneurship Club", tr: "Trakya Üniversitesi Girişimcilik Topluluğu" },
+    duration: "2023\u20132024",
+    description: { en: "Supported strategic planning, coordinated event operations, assisted in partnerships and sponsorship processes, and ensured continuity between board teams.", tr: "Stratejik planlamaya destek verildi, etkinlik operasyonları koordine edildi, ortaklıklar ve sponsorluk süreçlerine yardımcı olundu ve yönetim kurulları arasında süreklilik sağlandı." }
+  },
+  {
     id: 106,
     role: { en: "Technical Support Team Leader", tr: "Teknik Destek Takım Lideri" },
     company: { en: "Trakya Career Fair", tr: "Trakya Kariyer Fuarı" },
     duration: "2023",
     description: { en: "Led the on-site technical support team, coordinated rapid response to technical issues, and ensured smooth operation of event infrastructure.", tr: "Sahadaki teknik destek ekibine liderlik edildi, teknik sorunlara hızlı müdahale koordine edildi ve etkinlik altyapısının sorunsuz çalışması sağlandı." }
+  },
+  {
+    id: 104,
+    role: { en: "Board Member", tr: "Yönetim Kurulu Üyesi" },
+    company: { en: "Trakya University Entrepreneurship Club", tr: "Trakya Üniversitesi Girişimcilik Topluluğu" },
+    duration: "2022\u20132023",
+    description: { en: "Contributed to event organization, logistics planning and communication processes while supporting community activities and operational tasks.", tr: "Topluluk etkinliklerini ve operasyonel görevleri desteklerken etkinlik organizasyonu, lojistik planlama ve iletişim süreçlerine katkıda bulunuldu." }
   }
 ];
 
